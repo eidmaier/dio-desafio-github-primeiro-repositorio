@@ -1,0 +1,50 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.8fr 0.8fr 0.8fr 0.6fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "sobremim sobremim sobremim"
+    "experiencia experiencia experiencia"
+    "projeto projeto projeto"
+    "footer footer footer";
+}
+
+.header { grid-area: header;
+	display: block;
+	}
+
+.sobremim { grid-area: sobremim; 
+	background-color: #87CEFA;
+	text-align:center;
+	}
+
+.experiencia { grid-area: experiencia; 
+	text-align:center;
+	}
+
+.projeto { grid-area: projeto;
+	background-color: #87CEFA; 
+	text-align:center;
+	}
+
+.footer { grid-area: footer; }
+
+
+
+#image {
+	padding-left: 33%;
+	padding-right: 25px;
+	float: left;
+}
+
+/*#txt-header {
+	text-align:center;
+	
+}
+*/
+.footer {
+	text-align: center;
+}
